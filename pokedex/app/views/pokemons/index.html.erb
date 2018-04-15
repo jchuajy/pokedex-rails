@@ -1,0 +1,18 @@
+<h1>Welcome to the online Pokedex!</h1>
+<% @pokemons.each do |pokemon|%>
+      <div class="well">
+            <h1><%= pokemon.name %></h1>
+            <p><%= pokemon.num %></p>
+            <p><%= pokemon.img %></p>
+            <p><%= pokemon.height %></p>
+            <p><%= pokemon.weight %></p>
+            <p><%= pokemon.candy %></p>
+            <p><%= pokemon.candy_count %></p>
+            <p><%= pokemon.egg %></p>
+            <p><%= pokemon.avg_spawns %></p>
+            <p><%= pokemon.spawn_time %></p>
+            <%= link_to "Read More", pokemon_path(pokemon), :class => 'btn btn-dark' %>
+      </div>
+
+
+<% end %>

@@ -1,0 +1,13 @@
+<h1><%= @pokemon.name %></h1>
+<p><%= @pokemon.num %></p>
+<p><%= @pokemon.img %></p>
+<p><%= @pokemon.height %></p>
+<p><%= @pokemon.weight %></p>
+<p><%= @pokemon.candy %></p>
+<p><%= @pokemon.candy_count %></p>
+<p><%= @pokemon.egg %></p>
+<p><%= @pokemon.avg_spawns %></p>
+<p><%= @pokemon.spawn_time %></p>
+<hr>
+<%= link_to "Edit", edit_pokemon_path(@pokemon), :class => 'btn btn-dark' %>
+<%= link_to "Delete", pokemon_path(@pokemon), method: :delete, data: {confirm: 'Are you sure?'}, :class => 'btn btn-danger' %>
